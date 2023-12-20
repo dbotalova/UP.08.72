@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>За мостом|Главная</title>
+    <style>
+        body {
+            background-color: #F1F1F1;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        
+        .header { 
+            background-color: #fffbfb;
+            align-items: center;
+            margin: 20px;
+            padding: 20px;
+            padding-left: 100px;
+            padding-right: 60px;
+            border-radius: 50px;
+            font-size: 20px;
+            color: #5E88F4;
+            font-family: century gothic;
+            display: flex;
+            justify-content: space-evenly;
+        }
+        
+        .content {
+            flex-grow: 1;
+            background-color: #F1F1F1;
+            display: flex;
+            flex-direction: column-reverse;
+        }
+        
+        .footer {
+            background-color: #F4B25E;
+            color: #844C05;
+            margin-top: 150px;
+            text-align: center;
+            padding: 35px;
+            font-family: century gothic;
+            font-size: 18px;
+        }
+
+        .footer-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .footer-image {
+            margin-left: 10px;
+            margin-top: 0;
+        }
+        .button-container {
+        display: flex;
+        justify-content: center;
+        margin-top: 100px;
+    }
+
+    .button {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #F45E5E;
+    color: #9A0000;
+    font-size: 36px;
+    font-family: century gothic;
+    padding: 10px 400px; /* Increase the padding to make the button larger */
+    border: none; /* Remove the border */
+    border-radius: 10px; /* Round the corners */
+    white-space: nowrap; /* Prevent line breaks */
+}
+.gallery {
+            position: relative;
+            width: 90%;
+            height: 900px;
+            overflow: hidden;
+            margin-left: 100px;
+        }
+
+        .slideshow {
+            position: relative;
+            width: 100%;
+            height: 100%;
+        }
+
+        .slideshow img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+        }
+        .container {
+            margin-left: 100px;
+            margin-top: 100px;
+            background-color: #fffbfb;
+            border-radius: 10px;
+            padding: 20px;
+            width: 1680px; /* Increase the width to make the rectangle wider */
+            display: flex; /* Add display flex to align text and maps */
+            justify-content: space-between; /* Add justify-content space-between to separate text and maps */
+        }
+
+        .contact-info {
+            width: 300px; /* Set the width for the contact info */
+        }
+
+
+        h2 {
+            margin-left: 100px;
+            color: #1D336C;
+            font-size: 36px;
+            font-family: century gothic;
+            text-align: center;
+        }
+
+        ul {
+            width: 300px;
+        margin-left: 100px;
+          list-style-type: none;
+          padding: 0;
+        }
+
+        li {
+            width: 300px;
+            margin-left: 10px;
+            color: #1D336C;
+            font-size: 26px;
+            font-family: century gothic;
+          margin-bottom: 10px;
+        }
+
+        .address {
+            margin-left: 100px;
+            color: #1D336C;
+            font-size: 26px;
+            font-family: century gothic;
+          margin-top: 20px;
+        }
+    </style>
+
+
+</head>
+<body>
+    <div class="header">
+        <img src="../Content/лого.png" width="10%" height="5%" style="margin-right: -120px; margin-left: -200px;">
+        <p style="color: #F45E5E">Главная</p>
+        <p onclick="window.location.href='6.html'">О нас</p>
+        <p onclick="window.location.href='7.html'">Афиши</p>
+        <p onclick="window.location.href='8.html'">Сеансы</p>
+        <p onclick="window.location.href='9.html'">Контакты</p>
+        <img src="../Content/лк.png" width="5%" height="1%" style="margin-right: -120px; margin-right: -200px;" onclick="window.location.href='3.html'" >
+    </div>
+
+    <div class="content">
+        <div style="position: relative;">
+            <img src="../Content/афиши.png" width="90%" height="90%" style="margin-left: 100px;">
+
+            <div class="button-container">
+            <button onclick="window.location.href='7.html'" class="button" >Открыть Афиши</button>
+            </div>
+        </div>
+        <br><br>
+        <img src="../Content/банер.png" width="90%" height="90%" style="margin-left: 100px;"><br>
+    </div>
+
+    <div class="gallery">
+        <div class="slideshow">
+            <img src="../Content/12.png" style="border-radius: 10%;">
+            <img src="../Content/13.png" style="border-radius: 10%;">
+            <img src="../Content/14.png" style="border-radius: 10%;">
+        </div>
+    </div>
+    
+    <div class="container">
+        <div class="contact-info">
+            <h2>Контакты</h2>
+            <ul>
+              <li>Телефоны</li>
+              <li style="color: #5E88F4;">+7(225)452-33-26</li>
+              <li style="color: #5E88F4;">+7(824)641-70-97</li>
+              <li style="color: #5E88F4;">+7(442)273-50-89</li>
+            </ul>
+            <p class="address">Почта</p><p class="address" style="color: #5E88F4;"> zamostom@gmail.com</p>
+        </div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1057.0572233170856!2d56.22011893995924!3d58.00283027214314!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x43e8c7309d9a2415%3A0xdea93dbf8da99b1c!2z0J_QtdGA0LzRgdC60LjQuSDQutGA0LDQtdCy0L7QuSDQutC-0LvQu9C10LTQtiDQntC90LjQutGB!5e0!3m2!1sru!2sru!4v1702638003423!5m2!1sru!2sru" width="700" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" style="margin-left: -500px;"></iframe>
+    </div>
+    
+    <div class="footer">
+        <div class="footer-container">
+            Разработчик: Боталова Дарья Александровна, группа 2 - ИС, 2 курс, Специальность 09.02.07
+            <img src="../Content/qw.png" width="10%" height="5%" class="footer-image">
+        </div>
+    </div>
+
+    <script>
+        // Get all the slideshow images
+        const slideshowImages = document.querySelectorAll('.slideshow img');
+
+        // Set the initial index
+        let currentIndex = 0;
+
+        // Function to change the image in the gallery
+        function changeImage() {
+            // Hide all images
+            slideshowImages.forEach(image => {
+                image.style.opacity = 0;
+            });
+
+            // Show the current image
+            slideshowImages[currentIndex].style.opacity = 1;
+
+            // Increment the index
+            currentIndex = (currentIndex + 1) % slideshowImages.length;
+
+            // Call the function again after a delay
+            setTimeout(changeImage, 3000);
+        }
+
+        // Start changing the image in the gallery
+        changeImage();
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>За мостом|Афиши</title>
+    <style>
+        body {
+            background-color: #F1F1F1;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        
+        .header { 
+            background-color: #fffbfb;
+            align-items: center;
+            margin: 20px;
+            padding: 20px;
+            padding-left: 100px;
+            padding-right: 60px;
+            border-radius: 50px;
+            font-size: 20px;
+            color: #5E88F4;
+            font-family: century gothic;
+            display: flex;
+            justify-content: space-evenly;
+        }
+        
+        .content {
+            flex-grow: 1;
+            background-color: #F1F1F1;
+            display: flex;
+            flex-direction: column-reverse;
+        }
+        
+        .footer {
+            background-color: #F4B25E;
+            color: #844C05;
+            margin-top: 150px;
+            text-align: center;
+            padding: 35px;
+            font-family: century gothic;
+            font-size: 18px;
+        }
+
+        .footer-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .footer-image {
+            margin-left: 10px;
+            margin-top: 0;
+        }
+        .button-container {
+        display: flex;
+        justify-content: center;
+        margin-top: 100px;
+    }
+
+
+.block1 {
+            display: flex;
+            align-items: center;
+            margin: 80px;
+            margin-top: 10px;
+            padding: 40px;
+            border-radius: 50px;
+            background-color: #fffbfb;
+            color: #1D336C;
+            font-family: century gothic;
+            flex-direction: row; /* Added */
+        }
+        .text {
+            width: 80%;
+            font-size: 56px;
+        }
+
+        .image {
+            width: 100%;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+        }
+
+        .button {
+    position: absolute;
+    top: 135%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #F45E5E;
+    color: #9A0000;
+    font-size: 36px;
+    font-family: century gothic;
+    padding: 10px 400px; /* Increase the padding to make the button larger */
+    border: none; /* Remove the border */
+    border-radius: 10px; /* Round the corners */
+    white-space: nowrap; /* Prevent line breaks */
+}
+
+
+    </style>
+
+
+</head>
+<body>
+    <div class="header">
+        <img src="../Content/лого.png" width="10%" height="5%" style="margin-right: -120px; margin-left: -200px;">
+        <p onclick="window.location.href='5.html'">Главная</p>
+        <p onclick="window.location.href='6.html'">О нас</p>
+        <p style="color: #F45E5E">Афиши</p>
+        <p onclick="window.location.href='8.html'">Сеансы</p>
+        <p onclick="window.location.href='9.html'">Контакты</p>
+        <img src="../Content/лк.png" width="5%" height="1%" style="margin-right: -120px; margin-right: -200px;" onclick="window.location.href='3.html'" >
+    </div>
+
+    <div class="content">
+        <div class="block1">
+            <div class="text">
+                <p>"Анюта. Балет в двух действиях" - это театральный спектакль, представленный в формате балета. Спектакль рассказывает историю о главной героине Анюте, ее стремлениях, мечтах и преодолении трудностей. </p>
+            </div>
+            <div class="image">
+                <img src="../Content/9.png" width="50%" height="auto">
+            </div>
+        </div>
+        <div class="button-container">
+            <button onclick="window.location.href='7.html'" class="button" >Назад</button>
+        </div>
+       
+    </div>
+    
+    <div class="footer">
+        <div class="footer-container">
+            Разработчик: Боталова Дарья Александровна, группа 2 - ИС, 2 курс, Специальность 09.02.07
+            <img src="../Content/qw.png" width="10%" height="5%" class="footer-image">
+        </div>
+    </div>
+</body>
+</html>

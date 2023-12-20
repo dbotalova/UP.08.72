@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>За мостом|Корзина</title>
+    <style>
+        body {
+            background-color: #F1F1F1;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column; /* Change the flex-direction to column */
+            min-height: 100vh; /* Ensure the page takes up the full height of the viewport */
+        }
+        
+         
+        .header { 
+            background-color: #fffbfb;
+            align-items: center;
+            margin: 20px;
+            padding: 20px;
+            padding-left: 100px;
+            padding-right: 60px;
+            border-radius: 50px;
+            font-size: 20px;
+            color: #5E88F4;
+            font-family: century gothic;
+
+            display: flex; /* Add display flex to align the paragraphs horizontally */
+            justify-content: space-evenly; /* Add even spacing between the paragraphs */
+        }
+        
+        .content {
+            flex-grow: 1; /* Allow the content to grow and take up remaining space */
+            background-color: #F1F1F1;
+            display: flex; /* Add display flex to align the sidebar and content horizontally */
+            flex-direction: column-reverse; /* Reverse the order of the sidebar and content */
+        }
+        
+        .footer {
+        background-color: #F4B25E;
+        color: #844C05;
+        margin-top: 150px;
+        text-align: center;
+        padding: 35px;
+        font-family: century gothic;
+        font-size: 18px;
+
+    }
+
+    .footer-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-image {
+    margin-left: 10px;
+    margin-top: 0;
+}
+
+        
+        .sidebar {
+            width: 250px;
+            height:600px;
+            margin-top: 150px;
+            background-color: #8FAFFF;
+            padding: 20px;
+            border-radius: 20px;
+            margin: 50px;
+            float: left;
+        }
+        
+        .button {
+            display: block;
+            margin-top: 40px;
+            margin-bottom: 0;
+            padding: 10px;
+            background-color: #F45E5E;
+            color: #9A0000;
+            font-family: century gothic;
+            font-size: 34px;
+            border-radius: 20px;
+            text-align: center;
+            text-decoration: none;
+        }
+
+        .button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 90px;
+}
+
+.small-button {
+    display: block;
+    margin-top: -200px;
+    margin-left: -300px;
+    height: 50px;
+    background-color: #F45E5E;
+    color: #9A0000;
+    font-family: century gothic;
+    font-size: 24px;
+    border-radius: 20px;
+    text-align: center;
+    text-decoration: none;
+}
+
+#myImage {
+    margin-left: 500px;
+    margin-top: -770px;
+}
+
+        .button1 {
+            display: block;
+            margin-top: 40px;
+            margin-bottom: 10px;
+            padding: 20px;
+            width: 250px;
+            background-color: #F4B25E;
+            color: #844C05;
+            font-family: century gothic;
+            font-size: 34px;
+            border-radius: 20px;
+            text-align: center;
+            text-decoration: none;
+        }
+    </style>
+      <script>
+        function delete1() {
+            var image = document.getElementById("myImage");
+            image.parentNode.removeChild(image);
+            var button = document.getElementById("cancelButton");
+            button.parentNode.removeChild(button);
+        }
+    </script>
+    <script>
+        function displayUsername() {
+            var nameElement = document.getElementById("name");
+            nameElement.textContent = localStorage.getItem('name');
+        }
+    </script>
+    <script>
+        function displayText() {
+            var inputText = document.getElementById("inputField").value;
+            document.getElementById("name").innerText = inputText;
+        }
+    </script>
+</head>
+<body>
+    <div class="header" style="text-align: center;">
+        <img src="../Content/лого.png" width="10%" height="5%" style="margin-right: -120px; margin-left: -200px;">
+        <p onclick="window.location.href='5.html'">Главная</p>
+        <p onclick="window.location.href='6.html'">О нас</p>
+        <p onclick="window.location.href='7.html'">Афиши</p>
+        <p onclick="window.location.href='8.html'">Сеансы</p>
+        <p onclick="window.location.href='9.html'">Контакты</p>
+    </div>
+    <div class="content">
+        <div class="button-container">
+            <button id="cancelButton" onclick="delete1()" class="small-button">Отменить покупку</button>
+        </div>
+        <img id="myImage" src="../Content/16.png" width="60%" height="35%" style="margin-left: 500px; margin-top: -770px;">
+        <br><br><br>
+        <div class="sidebar">
+            <img src="../Content/ava.png" width="100%" height="35%"><br><br><br>
+            <a id="name" style="color: #1D336C; font-family: century gothic; font-size: 34px;">Имя</a>
+            <a class="button" href="3.html">Корзина</a>
+            <div class="button-container">
+                <a href="1.html" class="button1">Выход</a>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+    <div class="footer-container">
+Разработчик: Боталова Дарья Александровна, группа 2 - ИС, 2 курс, Специальность 09.02.07
+        <img src="../Content/qw.png" width="10%" height="5%" class="footer-image">
+    </div>
+</div>
+<script>
+    displayUsername();
+</script>
+</body>
+
+</body>
+</html>

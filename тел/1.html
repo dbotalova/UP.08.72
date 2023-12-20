@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>За мостом|Авторизация</title>
+    <style>
+    body {
+        background-color: #F1F1F1;
+        margin: 0;
+        padding: 0;
+    }
+
+    .header{
+        margin-top: 50px; 
+        margin-left: 20px; /* Updated */
+        right: 0;
+        color: #5E88F4; 
+        text-align: center; 
+        font-size: 40px; /* Updated */
+        font-family: century gothic;
+        display: flex; /* Add this line */
+        align-items: center; /* Add this line */
+    }
+
+    .header img {
+        margin-right: 10px; /* Add this line */
+    }
+
+
+    .input-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 50px; /* Updated */
+    }
+
+    .input-field {
+        width: 90%; /* Updated */
+        height: 50px;
+        margin-bottom: 10px;
+        border: none;
+        border-radius: 5px;
+        background-color: #ffffff;
+        padding: 5px;
+        border: 2px solid #5E88F4;
+        color: #5E88F4;
+        font-family: century gothic;
+        font-size: 24px;
+    }
+
+    .button-container {
+        display: flex;
+        justify-content: center;
+        margin-top: 50px; /* Updated */
+    }
+
+    .button {
+        width: 90%; /* Updated */
+        height: 60px;
+        margin: 0 10px;
+        border: none;
+        border-radius: 5px;
+        background-color: #8FAFFF;
+        color: #1D336C;
+        font-family: century gothic;
+        font-size: 24px;
+        cursor: pointer;
+    }
+
+    
+    .button-container1 {
+        display: flex;
+        justify-content: center;
+        margin-top: 30px; /* Updated */
+    }
+
+    .button1 {
+        width: 90%; /* Updated */
+        height: 60px;
+        margin: 0 10px;
+        border: none;
+        border-radius: 5px;
+        background-color: #F45E5E;
+        color: #7E1E1E;
+        font-family: century gothic;
+        font-size: 24px;
+        cursor: pointer;
+    }
+
+    .footer {
+        background-color: #F4B25E;
+        color: #844C05;
+        margin-top: 50px; /* Updated */
+        text-align: center;
+        padding: 35px;
+        font-family: century gothic;
+        font-size: 18px;
+
+    }
+
+    .footer-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .footer-image {
+        margin-left: 10px;
+        margin-top: 0;
+    }
+
+    @media only screen and (max-width: 768px) {
+        .header {
+            margin-left: 20px;
+            font-size: 40px;
+        }
+
+        .input-field {
+            width: 90%;
+        }
+
+        .button, .button1 {
+            width: 90%;
+        }
+    }
+    </style>
+    <script>
+        function validatePassword() {
+            var name = document.getElementById("inputField").value;
+            var password = document.getElementById("passwordField").value;
+    
+            if (name === "admin" && password === "12345678") {
+                window.location.href = '../тел/41.html';
+            } else {
+                window.location.href = '../тел/3.html';
+            }
+        }
+    </script>
+</head>
+<body>
+ 
+    <div class="header">
+        <img src="../тел/img/лого.png" width="25%" style="margin-top: 50px;">
+        |Авторизация
+    </div>
+    <div class="input-container">
+        <input type="text" class="input-field" placeholder="Имя пользователя" id="inputField"><br><br><br>
+        <input type="password" class="input-field" placeholder="Пароль" id="passwordField">
+    </div>
+
+    <div class="button-container">
+        <button onclick="return validatePassword()"class="button">Войти</button>
+    </div>
+    <div class="button-container1">
+        <button onclick="window.location.href='../тел/2.html'" class="button1">Зарегистрироваться</button>
+    </div>
+
+    <footer>
+        <div class="footer footer-container">
+            Разработчик: Боталова Дарья Александровна, группа 2 - ИС, 2 курс, Специальность 09.02.07
+            <img src="../тел/img/qw.png" width="10%" height="5%" style="margin-left: 10px; margin-top: 0;" class="footer-image">
+        </div>
+    </footer>
+</body>
+</html>

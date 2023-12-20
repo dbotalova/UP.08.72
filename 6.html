@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>За мостом|О нас</title>
+    <style>
+        body {
+            background-color: #F1F1F1;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        
+        .header { 
+            background-color: #fffbfb;
+            align-items: center;
+            margin: 20px;
+            padding: 20px;
+            padding-left: 100px;
+            padding-right: 60px;
+            border-radius: 50px;
+            font-size: 20px;
+            color: #5E88F4;
+            font-family: century gothic;
+            display: flex;
+            justify-content: space-evenly;
+        }
+        
+        .content {
+            flex-grow: 1;
+            background-color: #F1F1F1;
+            display: flex;
+            flex-direction: column-reverse;
+        }
+
+        .block1 {
+            display: flex;
+            align-items: center;
+            margin: 80px;
+            margin-top: 10px;
+            padding: 40px;
+            border-radius: 50px;
+            background-color: #fffbfb;
+            color: #1D336C;
+            font-family: century gothic;
+            flex-direction: row; /* Added */
+        }
+
+        .block2 {
+            display: flex;
+            align-items: center;
+            margin: 80px;
+            margin-top: 10px;
+            padding: 40px;
+            border-radius: 50px;
+            background-color: #fffbfb;
+            color: #1D336C;
+            font-family: century gothic;
+            flex-direction: row; /* Added */
+        }
+
+
+        .text {
+            width: 80%;
+            font-size: 56px;
+        }
+
+        .image {
+            width: 100%;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+        }
+        
+        .footer {
+            background-color: #F4B25E;
+            color: #844C05;
+            margin-top: 150px;
+            text-align: center;
+            padding: 35px;
+            font-family: century gothic;
+            font-size: 18px;
+        }
+
+        .footer-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .footer-image {
+            margin-left: 10px;
+            margin-top: 0;
+        }
+
+    </style>
+
+
+</head>
+<body>
+    <div class="header">
+        <img src="../Content/лого.png" width="10%" height="5%" style="margin-right: -120px; margin-left: -200px;">
+        <p onclick="window.location.href='5.html'">Главная</p>
+        <p style="color: #F45E5E">О нас</p>
+        <p onclick="window.location.href='7.html'">Афиши</p>
+        <p onclick="window.location.href='8.html'">Сеансы</p>
+        <p onclick="window.location.href='9.html'">Контакты</p>
+        <img src="../Content/лк.png" width="5%" height="1%" style="margin-right: -120px; margin-right: -200px;" onclick="window.location.href='3.html'" >
+    </div>
+
+    <div class="content">
+        
+
+        <div class="block1">
+            <div class="text">
+                <p>Театр "За мостом" известен своим разнообразным репертуаром, который включает в себя как классические произведения, так и современные пьесы. </p>
+            </div>
+            <div class="image">
+                <img src="../Content/17.png" width="70%" height="auto">
+            </div>
+        </div>
+        
+        <div class="block2">
+            <div style="display: flex; justify-content: flex-end;">
+                <div class="image" style="margin-left: 10px;">
+                    <img src="../Content/15.png" width="700px" height="auto">
+                </div>
+            </div>
+            
+            <div class="text" style="float: left;margin-left: 200px;">
+                <p>Театр "За мостом" - это одно из самых известных театральных учреждений в Перми. Он был основан в 1984 году и с тех пор стал популярным местом для постановки различных спектаклей. Театр расположен  в центре города.</p>
+            </div>
+        </div>
+        </div> 
+        <p style="font-size: 64px; color: #1D336C; font-family: century gothic; align-self: center;">Работники театра</p>
+
+        <div class="block1">
+            <div class="text">
+                <p>Иванов Алексей - Ведущий художественный руководитель</p>
+            </div>
+            <div class="image">
+                <img src="../Content/фото 1.png" width="50%" height="auto">
+            </div>
+        </div>
+
+        <div class="block1">
+            <div class="text">
+                <p>Смирнов Дмитрий - Заведующий труппой</p>
+            </div>
+            <div class="image">
+                <img src="../Content/фото 2.png" width="50%" height="auto">
+            </div>
+        </div>
+        
+        <div class="block1">
+            <div class="text">
+                <p>Ковалева Екатерина - Заведующий литчастью</p>
+            </div>
+            <div class="image">
+                <img src="../Content/фото 4.png" width="50%" height="auto">
+            </div>
+        </div>
+
+        <div class="block1">
+            <div class="text">
+                <p>Петрова Ольга - Заведующие мастерской</p>
+            </div>
+            <div class="image">
+                <img src="../Content/фото 5.png" width="50%" height="auto">
+            </div>
+        </div>
+
+        <div class="block1">
+            <div class="text">
+                <p>Сидорова Анна - аведующий костюмерной</p>
+            </div>
+            <div class="image">
+                <img src="../Content/фото 6.png" width="50%" height="auto">
+            </div>
+        </div>
+    </div>
+    
+    <div class="footer">
+        <div class="footer-container">
+            Разработчик: Боталова Дарья Александровна, группа 2 - ИС, 2 курс, Специальность 09.02.07
+            <img src="../Content/qw.png" width="10%" height="5%" class="footer-image">
+        </div>
+    </div>
+</body>
+</html>

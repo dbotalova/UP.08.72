@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>За мостом|Регистрация</title>
+    <style>
+    body {
+        background-color: #F1F1F1;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .header{
+        margin-top: 50px; 
+        margin-left: 20px; /* Adjusted for mobile */
+        right: 0;
+        color: #5E88F4; 
+        text-align: center; 
+        font-size: 40px; /* Adjusted for mobile */
+        font-family: century gothic;
+        display: flex; /* Add this line */
+        align-items: center; /* Add this line */
+    }
+
+    .header img {
+        margin-right: 10px; /* Add this line */
+    }
+
+    .input-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 50px; /* Adjusted for mobile */
+    }
+
+    .input-field {
+        width: 90%; /* Adjusted for mobile */
+        height: 50px;
+        margin-bottom: 10px;
+        border: none;
+        border-radius: 5px;
+        background-color: #ffffff;
+        padding: 5px;
+        border: 2px solid #5E88F4;
+        color: #5E88F4;
+        font-family: century gothic;
+        font-size: 24px;
+    }
+
+    .button-container {
+        display: flex;
+        justify-content: center;
+        margin-top: 40px; /* Adjusted for mobile */
+    }
+
+    .button {
+        width: 90%; /* Adjusted for mobile */
+        height: 60px;
+        margin: 0 10px;
+        border: none;
+        border-radius: 5px;
+        background-color: #8FAFFF;
+        color: #1D336C;
+        font-family: century gothic;
+        font-size: 24px;
+        cursor: pointer;
+    }
+
+    .footer {
+        background-color: #F4B25E;
+        color: #844C05;
+        margin-top: 50px; /* Adjusted for mobile */
+        text-align: center;
+        padding: 20px; /* Adjusted for mobile */
+        font-family: century gothic;
+        font-size: 14px; /* Adjusted for mobile */
+    }
+
+    .footer-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .footer-image {
+        margin-left: 10px;
+        margin-top: 0;
+    }
+
+    @media only screen and (max-width: 768px) {
+        .header {
+            margin-left: 20px;
+            font-size: 40px;
+        }
+
+        .input-field {
+            width: 90%;
+        }
+
+        .button{
+            width: 90%;
+        }
+    }
+    </style>
+    <script>
+        function validatePassword() {
+            var password = document.getElementById("password").value;
+            var confirmPassword = document.getElementById("confirmPassword").value;
+            var name = document.getElementById("inputField").value;
+
+            localStorage.setItem('name', name);
+    
+            if (password != confirmPassword) {
+                alert("Пароли не совпадают!");
+                return false;
+            } else {
+                // Redirect to the next page or perform any other action here
+                window.location.href = "../тел/3.html";
+            }
+        }
+    </script>
+</head>
+<body>
+ 
+    <div class="header">
+        <img src="../тел/img/лого.png" width="25%" style="margin-top: 50px;">
+        |Регистрация
+    </div>
+    <div class="input-container">
+        <input type="text" class="input-field" placeholder="Имя пользователя" id="inputField"><br>
+        <input type="text" class="input-field" placeholder="Фамилия"><br>
+        <input type="text" class="input-field" placeholder="Отчество"><br>
+        <input type="text" class="input-field" placeholder="E-mail"><br>
+        <input type="text" class="input-field" placeholder="Придумайте логин"><br>
+        <input type="password" class="input-field" id="password" placeholder="Придумайте пароль"><br>
+        <input type="password" class="input-field" id="confirmPassword" placeholder="Повторите пароль">
+    </div>
+
+    <div class="button-container">
+        <button onclick="return validatePassword()" href="../тел/3.html" class="button">Создать аккаунт и войти в кабинет</button>
+    </div>
+</body>
+<footer>
+    <div class="footer footer-container">
+        Разработчик: Боталова Дарья Александровна, группа 2 - ИС, 2 курс, Специальность 09.02.07
+        <img src="../тел/img/qw.png" width="10%" height="5%" style="margin-left: 10px; margin-top: 0;" class="footer-image">
+    </div>
+</footer>
+</html>

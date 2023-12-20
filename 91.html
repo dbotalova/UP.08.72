@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>За мостом|Сеансы</title>
+    <style>
+        body {
+            background-color: #F1F1F1;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        
+        .header { 
+            background-color: #fffbfb;
+            align-items: center;
+            margin: 20px;
+            padding: 20px;
+            padding-left: 100px;
+            padding-right: 60px;
+            border-radius: 50px;
+            font-size: 20px;
+            color: #5E88F4;
+            font-family: century gothic;
+            display: flex;
+            justify-content: space-evenly;
+        }
+        
+        .content {
+            flex-grow: 1;
+            background-color: #F1F1F1;
+            display: flex;
+            flex-direction: column-reverse;
+        }
+        
+        .footer {
+            background-color: #F4B25E;
+            color: #844C05;
+            margin-top: 150px;
+            text-align: center;
+            padding: 35px;
+            font-family: century gothic;
+            font-size: 18px;
+        }
+
+        .footer-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .footer-image {
+            margin-left: 10px;
+            margin-top: 0;
+        }
+
+        .button {
+    position: absolute;
+    top: 167%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #F45E5E;
+    color: #9A0000;
+    font-size: 36px;
+    font-family: century gothic;
+    padding: 10px 400px; /* Increase the padding to make the button larger */
+    border: none; /* Remove the border */
+    border-radius: 10px; /* Round the corners */
+    white-space: nowrap; /* Prevent line breaks */
+}
+.button {
+    position: absolute;
+    top: 167%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #F45E5E;
+    color: #9A0000;
+    font-size: 36px;
+    font-family: century gothic;
+    padding: 10px 400px; /* Increase the padding to make the button larger */
+    border: none; /* Remove the border */
+    border-radius: 10px; /* Round the corners */
+    white-space: nowrap; /* Prevent line breaks */
+}
+
+.button1 {
+    position: absolute;
+    top: 93%;
+    left: 42%;
+    transform: translate(-50%, -50%);
+    background-color: #F45E5E;
+    color: #9A0000;
+    font-size: 36px;
+    font-family: century gothic;
+    padding: 20px 20px; /* Increase the padding to make the button larger */
+    border: none; /* Remove the border */
+    border-radius: 10px; /* Round the corners */
+    white-space: nowrap; /* Prevent line breaks */
+}  
+    </style>
+<script>
+    function addToCart(productId) {
+        // Здесь можно добавить логику для добавления товара в корзину
+        alert('Товар  ' + productId + ' добавлен в корзину!');
+    }
+</script>
+
+
+</head>
+<body>
+    <div class="header">
+        <img src="../Content/лого.png" width="10%" height="5%" style="margin-right: -120px; margin-left: -200px;">
+        <p  onclick="window.location.href='5.html'">Главная</p>
+        <p onclick="window.location.href='6.html'">О нас</p>
+        <p onclick="window.location.href='7.html'">Афиши</p>
+        <p style="color: #F45E5E" >Сеансы</p>
+        <p onclick="window.location.href='9.html'">Контакты</p>
+        <img src="../Content/лк.png" width="5%" height="1%" style="margin-right: -120px; margin-right: -200px;" onclick="window.location.href='3.html'" >
+    </div>
+    <p  style="font-size: 50px; font-family:century gothic;color: #5E88F4; margin-left: 700px;">Выбрать место(а)</p>
+    <div class="content" style="margin-left: 200px; margin-top: 90px;" >
+        <div class="button-container">
+            <button onclick="addToCart(1)" onclick="window.location.href='4.html'" class="button1" >     </button>
+        </div>
+        <img src="../Content/места.png" width="90%" height="90%" class="footer-image">
+    </div>
+    <div class="button-container">
+        <button onclick="window.location.href='8.html'" class="button" >Назад</button>
+    </div>
+
+    
+    <div class="footer">
+        <div class="footer-container">
+            Разработчик: Боталова Дарья Александровна, группа 2 - ИС, 2 курс, Специальность 09.02.07
+            <img src="../Content/qw.png" width="10%" height="5%" class="footer-image">
+        </div>
+    </div>
+
+</body>
+</html>

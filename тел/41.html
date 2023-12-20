@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>За мостом|Администратор</title>
+    <style>
+        body {
+            background-color: #F1F1F1;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .header { 
+            background-color: #fffbfb;
+            align-items: center;
+            margin: 20px;
+            padding: 20px;
+            padding-left: 50px;
+            padding-right: 50px;
+            border-radius: 50px;
+            font-size: 16px;
+            color: #5E88F4;
+            font-family: century gothic;
+            display: flex;
+            justify-content: space-evenly;
+        }
+        
+        .content {
+            background-color: #F1F1F1;
+            padding: 20px;
+        }
+        
+        .footer {
+            background-color: #F4B25E;
+            color: #844C05;
+            text-align: center;
+            padding: 20px;
+            font-family: century gothic;
+            font-size: 14px;
+            margin-top: 1000px;
+        }
+        
+        .sidebar {
+            background-color: #8FAFFF;
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 20px;
+        }
+        
+        .button {
+            display: block;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            padding: 10px;
+            background-color: #F45E5E;
+            color: #9A0000;
+            font-family: century gothic;
+            font-size: 24px;
+            border-radius: 20px;
+            text-align: center;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="header" style="text-align: center;">
+        <img src="../тел/img/лого.png" width="30%" height="auto">
+    </div>
+    <div class="content">
+        <div class="sidebar">
+            <img src="../тел/img/ava.png" width="50%" height="auto">
+            <br><br>
+            <a id="name" style="color: #1D336C; font-family: century gothic; font-size: 24px;">Админ</a>
+            <br><br>
+            <a href="../тел/1.html" class="button">Выход</a>
+        </div>
+        <br><br>
+        <style>
+            .white-block {
+                margin-top: 25px;
+                margin-bottom: 25px;
+                margin-left: 100px;
+                height:500px;
+                width: 1500px;
+                background-color: #D9D9D9;
+                border-radius: 10px;
+                padding: 50px;
+            }
+            
+            .overlay {
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(0, 0, 0, 0.5);
+                display: flex;
+                font-family: century gothic;
+                justify-content: center;
+                align-items: center;
+            }
+            
+            .popup {
+                background-color: white;
+                padding: 20px;
+                border-radius: 10px;
+                text-align: center;
+            }
+            </style>
+            
+        <div class="white-block">
+            <img src="../тел/img/плюс.png" width="25%" height="auto">
+            <br><br><br><br>
+            <button id="registerBtn" style="color: #1D336C; font-family: century gothic; font-size: 24px;">Добавить товар</button>
+            <br><br><br><br><br><br><br><br><br><br>
+            <a id="name" style="color: #1D336C; font-family: century gothic; font-size: 24px;">История заказов:</a>
+            <img src="../тел/img/16.png" width="90%" height="auto" style="margin-left: 10px; margin-top: 10px;">
+        </div>
+        <script>
+            document.getElementById("registerBtn").addEventListener("click", function() {
+                // Создаем элементы для выпадающего окна
+                var overlay = document.createElement("div");
+                overlay.classList.add("overlay");
+                var popup = document.createElement("div");
+                popup.classList.add("popup");
+                popup.textContent = "Находится в разработке";
+    
+                // Добавляем элементы на страницу
+                overlay.appendChild(popup);
+                document.body.appendChild(overlay);
+    
+                // Закрываем выпадающее окно при клике на overlay
+                overlay.addEventListener("click", function() {
+                    document.body.removeChild(overlay);
+                });
+            });
+        </script>
+    </div>
+    <div class="footer">
+        Разработчик: Боталова Дарья Александровна, группа 2 - ИС, 2 курс, Специальность 09.02.07
+        <img src="../тел/img/qw.png" width="10%" height="auto">
+    </div>
+</body>
+</html>
