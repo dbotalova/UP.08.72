@@ -127,7 +127,7 @@
         function validatePassword() {
             var name = document.getElementById("inputField").value;
             var password = document.getElementById("passwordField").value;
-    
+            localStorage.setItem('name', name);
             if (name === "admin" && password === "12345678") {
                 window.location.href = '../тел/41.html';
             } else {
